@@ -17,7 +17,6 @@ public:
         lion, dog, frog, dolphin, eagle
     };
 
-    //get enum string
     std::string convertToString(animals enum_obj)
     {
         if (enum_obj == lion)
