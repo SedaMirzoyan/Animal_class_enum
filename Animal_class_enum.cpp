@@ -312,7 +312,7 @@ private:
 
 public:
 
-    inline Amphibian()
+    inline Amphibian():m_color(0)
     {
         std::cout << __func__ << std::endl;
     }
