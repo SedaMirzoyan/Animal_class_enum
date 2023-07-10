@@ -13,11 +13,12 @@ public:
 
     /**********enum*********/
 
-    enum animals {
+    static enum animals {
         lion, dog, frog, dolphin, eagle
     };
 
-    std::string convertToString(animals enum_obj)
+    //get enum string
+    static std::string convertToString(animals enum_obj)
     {
         if (enum_obj == lion)
         {
@@ -42,7 +43,7 @@ public:
 
     }
    
-    animals convertToInt(std::string animal_name)
+    static animals convertToInt(const std::string animal_name)
     {
         if (animal_name == "lion")
         {
@@ -66,7 +67,7 @@ public:
         }
     }
 
-    void enum_func(animals enum_obj)
+    static void enum_func(animals enum_obj)
     {
         std::string str = convertToString(enum_obj);
         std::cout << "enum string is " << str << std::endl;
